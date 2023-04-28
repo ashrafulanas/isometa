@@ -1,12 +1,16 @@
 <div class="serviceSection">
   <div class="container">
-    <div class="row">
-            <div class="sectionHeader text-center">
+      <div class="row justify-content-center">
+           <div class="col-lg-8">
+             <div class="sectionHeader text-center">
                 <h2 class="sectionTitle">Our Amazing Service</h2>
-                    <p class="sectionSubtitle">
-                    Suspendisse Lectus Vivamus Donec Turpis Egestas, Sed At Massa Orci, Et Nibh Massa Augue Fermentum Arcu, Potenti Tellus Praesent Integer Aliquam.
-                    </p>
+                <p class="sectionSubtitle">
+                Suspendisse Lectus Vivamus Donec Turpis Egestas, Sed At Massa Orci, Et Nibh Massa Augue Fermentum Arcu, Potenti Tellus Praesent Integer Aliquam.
+                </p>
             </div>
+           </div>
+        </div>
+        <div class="row">
       <div class="col-lg-4 col-md-6">
           <div class="serviceContent">
             <div class="serviceIcon">

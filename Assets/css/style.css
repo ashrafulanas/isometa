@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* @media (max-width: 992px) and (min-width: 768px)  */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -43,9 +44,94 @@ img {
 }
 .sectionSubtitle {
   font-size: 16px;
-  padding: 0 200px;
+  text-align: center;
 }
 /* End of Basic common part of CSS Style part */
+
+/* Process Section CSS Style */
+.processSection {
+  margin: 100px 0;
+}
+.processContent {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+.processContent .processIcon {
+  position: relative;
+}
+.processContent .processIcon .processStep {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  right: 70px;
+  top: -20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #13134e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 991px) {
+  .processContent .process-divider {
+    display: none;
+  }
+}
+.processContent .process-divider {
+  position: absolute;
+  left: auto;
+  top: 40px;
+  width: calc(100% - 130px);
+  height: 1px;
+  background-image: linear-gradient(
+    90deg,
+    #73778c,
+    #73778c 40%,
+    transparent 40%,
+    transparent 100%
+  );
+  background-size: 12px 1px;
+  z-index: -1;
+}
+.processContent .process-divider::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  color: #13134e;
+  font-weight: 600;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.processContent .processIcon i {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #13134e;
+  font-size: 35px;
+  color: white;
+}
+.processContent .processDetail {
+}
+.processContent .processDetail h2 {
+  font-size: 24px;
+  margin: 20px 0 15px;
+}
+.processContent .processDetail p {
+  font-size: 15px;
+}
+
+/* Process Section CSS Style End */
 
 /* Service Section CSS style */
 .serviceSection {
