@@ -299,3 +299,59 @@ img {
   background-color: #73778c;
 }
 /* clientSection css Style end */
+
+/* portfolio Section Style */
+.portfolioSection {
+  margin: 100px 0;
+}
+.buttonWrap {
+  margin-bottom: 20px;
+}
+.buttonGroup {
+  display: block;
+  text-align: center;
+}
+.buttonGroup button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px dashed #13134e;
+  transition: all 0.25s ease;
+}
+.buttonGroup button.active {
+  color: #fff;
+  background-color: #13134e;
+  border: 1px dashed #13134e;
+}
+.box-listing {
+}
+.box-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fff;
+  width: 33.3%;
+  padding: 15px;
+}
+@media (max-width: 991px) and (min-width: 576px) {
+  .box-item {
+    width: 50%;
+  }
+  .buttonGroup button {
+    margin: 0 10px 10px 5px;
+  }
+}
+@media (max-width: 575px) {
+  .box-item {
+    width: 100%;
+  }
+  .bttn {
+    display: inline;
+    text-align: center;
+    padding: 0 0 10px;
+  }
+  .buttonGroup button {
+    margin: 0 10px 10px 5px;
+  }
+}
+/* portfolio Section Style end */

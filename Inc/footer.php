@@ -5,7 +5,7 @@
     <!-- js plugin scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- js bootstrap scripts -->
     <script
@@ -18,7 +18,32 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
     <script src="Assets/js/custom.js"></script>
+    
+    <script>
+      var header=document.getElementsByClassName('buttonGroup');
+      var button=document.getElementsByClassName('bttn');
+      for(i=0; i<button.length; i++){
+        button[i].addEventListener("click", function(){
+          var currentBtn=document.getElementsByClassName('active');
+          currentBtn[0].className=currentBtn[0].className.replace("active","");
+          this.className+=" active";
+        });
+      };
+
+          // init isotope
+    var $listing = $('.box-listing').isotope({
+        itemSelector: '.box-item',
+        layoutMode: 'fitRows',
+        
+    });
+      // bind filter button click
+        $("#filter").on("click", "button", function() {
+            var filterValue = $(this).attr('data-filter');
+            $listing.isotope({ filter: filterValue });
+        });
+    </script>
   
   </body>
 </html>
