@@ -327,15 +327,60 @@ img {
 .box-listing {
 }
 .box-item {
+  position: relative;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #fff;
-  width: 33.3%;
-  padding: 15px;
+  width: 31.19%;
+  margin: 10px;
+  overflow: hidden;
 }
+.box-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #13134e;
+  opacity: 0;
+  width: 0%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.box-item:hover .overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.box-item .overlayIcon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.box-item:hover .overlayIcon {
+  opacity: 1;
+}
+.box-item img {
+  transition: all 0.7s ease;
+}
+.box-item:hover img {
+  transform: scale(1.2);
+}
+
 @media (max-width: 991px) and (min-width: 576px) {
   .box-item {
-    width: 50%;
+    width: 47.1%;
   }
   .buttonGroup button {
     margin: 0 10px 10px 5px;
@@ -344,14 +389,28 @@ img {
 @media (max-width: 575px) {
   .box-item {
     width: 100%;
+    margin: 10px 0;
+  }
+  .buttonGroup {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    align-items: stretch;
   }
   .bttn {
-    display: inline;
+    display: block;
     text-align: center;
-    padding: 0 0 10px;
+    padding: 0 0px 10px;
   }
   .buttonGroup button {
     margin: 0 10px 10px 5px;
   }
 }
 /* portfolio Section Style end */
+
+.testBox:hover {
+}
+.testBox img {
+  width: 300px;
+  height: 300px;
+}

@@ -27,18 +27,39 @@
                  <div class="box-listing">
                         <div class="box-item website" data-category="website">
                             <img src="Assets/image/project-1.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="overlayIcon">
+                                 <a class="image-popup" href="Assets/image/project-1.jpg"><i class="fa-solid fa-expand"></i></a>
+                            </div>
                         </div>
                         <div class="box-item cms" data-category="cms">
                             <img src="Assets/image/project-2.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="overlayIcon">
+                                 <a class="image-popup" href="Assets/image/project-2.jpg"><i class="fa-solid fa-expand"></i></a>
+                            </div>
                         </div>
                         <div class="box-item plugin" data-category="plugin">
                             <img src="Assets/image/project-6.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="overlayIcon">
+                                 <a class="image-popup" href="Assets/image/project-6.jpg"><i class="fa-solid fa-expand"></i></a>
+                            </div>
                         </div>
                         <div class="box-item theme" data-category="theme">
                             <img src="Assets/image/project-3.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="overlayIcon">
+
+                                <a class="image-popup" href="Assets/image/project-3.jpg"><i class="fa-solid fa-expand"></i></a>
+                            </div>
                         </div>
                         <div class="box-item plugin" data-category="plugin">
                             <img src="Assets/image/project-4.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="overlayIcon">
+                                <a class="image-popup" href="Assets/image/project-4.jpg"><i class="fa-solid fa-expand"></i></a>
+                            </div>
                         </div>
                  </div>
             </div>

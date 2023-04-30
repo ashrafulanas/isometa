@@ -24,3 +24,6 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+$(".image-popup").magnificPopup({
+  type: "image",
+});
